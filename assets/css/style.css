@@ -1,0 +1,64 @@
+body {
+    background-image: url(../images/diamond_upholstery.png);
+}
+
+.jumbotron {
+    background-image: url(../images/giphy.gif);
+    background-repeat: repeat;
+    background-size: 100% 250px;
+    
+}
+
+.diamond {
+    width: 100px;
+    height: 100px;
+    
+}
+.card-crystal-1 {
+    display: flex;
+    background-color: lightblue;
+    justify-content: center;
+    border: 1px solid blue;
+}
+
+.card-crystal-2 {
+    display: flex;
+    background-color: purple;
+    justify-content: center;
+    border: 1px solid purple;
+}
+
+.card-crystal-3 {
+    display: flex;
+    background-color: lightcoral;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.card-crystal-4 {
+    display: flex;
+    background-color: lightgoldenrodyellow;
+    justify-content: center;
+    border: 1px solid yellow;
+}
+
+.img-card {
+    border: 5px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+#randomNum {
+    font-size: 5rem;
+}
+
+.card-result {
+    height: 100px;
+    text-align: center;
+
+}
+
+
+#result {
+    font-size: 5rem;
+}

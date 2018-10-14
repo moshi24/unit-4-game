@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../unit-4-game/assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="../unit-4-game/assets/css/style.css">
+    <title>Game</title>
+</head>
+<!-- header with instruction -->
+<body>
+    <div class="jumbotron jumbotron-fluid bg-warning text-center mb-2">
+        <div class="container">
+            <h1 class="display-4 text-danger font-weight-bold font-italic">Crystal-Collector</h1>
+            
+            <hr>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+                How To Play
+            </button>
+      
+      <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Objective</h5>
+                        </div>
+                            <div class="modal-body text-center  font-italic">
+                               <p>You will be given a random number at the start of the game.</p> 
+
+                                <p>There are four crystals below. By clicking on a crystal you wil add a specific amount of points to your total score.</p> 
+                                
+                                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above tha random number.</p>    
+                                
+                                <p>The value of each crystal is hidden from you until you click on it</p> 
+                                
+                                <p>Each time when the game starts, the game will change value of Each crystal.</p> 
+                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- number and wins&losses -->
+    <div class="container">
+            <div class="row">    
+                <div class="card col-md bg-primary m-1">
+                    <div class="card-body text-center text-white ">
+                         <h1 id="randomNum"></h1>
+                    </div>
+                </div>
+                <div class="card col-md bg-danger m-1">
+                    <div class="card-body text-left text-white">
+                        <h1 >wins: <span id="wins"></span></h1>
+                        <h1 >Losses: <span id="losses"></span></h1>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <br>
+<!-- crystals -->
+    <div class="container">
+        <div class="row">
+            <div class=" col card-crystal-1 m-2">
+                <img src="../unit-4-game/assets/images/Crystal-Blue.png" alt="Crystal-Blue" width="150px" height="150px">
+            </div>
+                   
+            <div class=" col card-crystal-2 m-2">
+                <img src="../unit-4-game/assets/images/Crystal-Purple.png" alt="Crystal-Purple" width="150px" height="150px">
+            </div>
+            
+            <div class=" col card-crystal-3 m-2">
+                <img src="../unit-4-game/assets/images/Crystal-Red.png" alt="Crystal-Red" width="150px" height="150px">
+            </div>
+           
+            <div class=" col card-crystal-4 m-2">
+                <img  src="../unit-4-game/assets/images/Crystal-Yellow.png" alt="Crystal-Yellow" width="150px" height="150px" >
+            </div>
+        </div>
+    </div>
+<br>
+<!-- result --> 
+<div class="container card-result mt-0">
+        <div class="row">
+            <div class="card card-result col-sm text-white bg-info">
+                <h2 id="result"></h2>
+            </div>
+        </div>  
+    </div>
+
+    
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="./assets/javascript/javascript.js"></script>    
+</body>
+</html>
